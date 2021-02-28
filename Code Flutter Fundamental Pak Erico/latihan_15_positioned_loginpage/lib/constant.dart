@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 double getSmallDiameter(BuildContext context) {
-  return MediaQuery.of(context).size.width * 0.6;
+  return MediaQuery.of(context).size.width * 2 / 3;
 }
 
 double getBigDiameter(BuildContext context) {
-  return MediaQuery.of(context).size.width * 0.875;
+  return MediaQuery.of(context).size.width * 7 / 8;
 }
