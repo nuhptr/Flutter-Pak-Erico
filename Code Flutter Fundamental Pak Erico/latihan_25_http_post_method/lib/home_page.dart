@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
                     postResult.job +
                     " " +
                     postResult.created
-                : Text("Tidak Ada Data")),
+                : "Tidak Ada Data"),
             ElevatedButton(
               onPressed: () {
                 PostResult.connectToApi("Adi", "Dokter").then((value) {
