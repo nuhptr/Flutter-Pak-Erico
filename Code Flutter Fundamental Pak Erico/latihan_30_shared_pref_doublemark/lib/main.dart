@@ -21,20 +21,22 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   TextEditingController _controller = TextEditingController(text: "No Name");
   bool isOn = false;
-  late SharedPreferences pref =
-      SharedPreferences.getInstance() as SharedPreferences;
+  Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
   void saveData() async {
+    SharedPreferences pref = await _prefs;
     pref.setString("name", _controller.text);
     pref.setBool("ison", isOn);
   }
 
   Future<String> getName() async {
+    SharedPreferences pref = await _prefs;
     return pref.getString('name') ??
         "no name"; // double mark is tell to the system is null? if yes return no name
   }
 
   Future<bool> getOn() async {
+    SharedPreferences pref = await _prefs;
     return pref.getBool('ison') ?? false;
   }
 
