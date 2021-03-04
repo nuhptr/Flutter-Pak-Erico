@@ -55,9 +55,8 @@ class _HomePageState extends State<HomePage> {
             Switch(
               value: isOn,
               onChanged: (newValue) {
-                setState(() {
-                  isOn = newValue;
-                });
+                isOn = newValue;
+                setState(() {});
               },
             ),
             ElevatedButton(
