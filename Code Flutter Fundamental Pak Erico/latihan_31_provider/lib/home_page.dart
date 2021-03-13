@@ -13,21 +13,26 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          title: Text(
-            'Provider State Management',
-            style: TextStyle(color: Colors.black),
+          title: Consumer<ApplicationColor>(
+            builder: (BuildContext context, applicationColor, _) => Text(
+              'Provider State Management',
+              style: TextStyle(color: applicationColor.color),
+            ),
           ),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              AnimatedContainer(
-                duration: Duration(milliseconds: 500),
-                width: 100,
-                height: 100,
-                color: Colors.lightBlue,
-                margin: EdgeInsets.all(5),
+              Consumer<ApplicationColor>(
+                builder: (BuildContext context, applicationColor, _) =>
+                    AnimatedContainer(
+                  duration: Duration(milliseconds: 500),
+                  width: 100,
+                  height: 100,
+                  color: applicationColor.color,
+                  margin: EdgeInsets.all(5),
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -36,9 +41,13 @@ class HomePage extends StatelessWidget {
                     child: Text('AB'),
                     margin: EdgeInsets.all(5),
                   ),
-                  Switch(
-                    value: true,
-                    onChanged: (onChange) {},
+                  Consumer<ApplicationColor>(
+                    builder: (context, applicationColor, _) => Switch(
+                      value: applicationColor.isLightBlue,
+                      onChanged: (onChange) {
+                        applicationColor.isLightBlue = onChange;
+                      },
+                    ),
                   ),
                   Container(
                     margin: EdgeInsets.all(5),
