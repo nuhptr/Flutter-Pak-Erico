@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'color.bloc.dart';
+import 'color_bloc.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
