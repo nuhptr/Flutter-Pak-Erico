@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // ignore: close_sinks
     ColorBloc colorBloc = BlocProvider.of<ColorBloc>(context);
 
     return Scaffold(
