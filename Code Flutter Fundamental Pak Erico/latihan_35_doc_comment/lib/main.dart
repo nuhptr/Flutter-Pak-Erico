@@ -11,6 +11,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  final UserProfile userProfile = UserProfile();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
