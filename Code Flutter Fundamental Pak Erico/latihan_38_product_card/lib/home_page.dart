@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:latihan_38_product_card/theme.dart';
+import 'package:latihan_38_product_card/product_card.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -8,13 +8,17 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Product Card'),
-        backgroundColor: firstColor,
       ),
       body: Container(
         margin: EdgeInsets.all(20),
         child: Align(
           alignment: Alignment.center,
-          child: ProductCard(),
+          child: ProductCard(
+            name: "Flutter Language",
+            price: "\$ 20",
+            imageUrl:
+                "https://www.inovex.de/blog/wp-content/uploads/2019/01/Flutter-1-1.png",
+          ),
         ),
       ),
     );
