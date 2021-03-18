@@ -63,18 +63,23 @@ class _ProductCardState extends State<ProductCard> {
                           fit: BoxFit.cover,
                         )),
                   ),
-                  Container(
-                    margin: EdgeInsets.all(5),
-                    child: Text(
-                      widget.name,
-                      style: textStyle,
+                  Center(
+                    child: Container(
+                      margin: EdgeInsets.all(5),
+                      child: Text(
+                        widget.name,
+                        maxLines: 1,
+                        style: textStyle,
+                      ),
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: 5, right: 5),
-                    child: Text(
-                      widget.price,
-                      style: textStyle,
+                  Center(
+                    child: Container(
+                      margin: EdgeInsets.only(left: 5, right: 5),
+                      child: Text(
+                        widget.price,
+                        style: textStyle,
+                      ),
                     ),
                   )
                 ],
