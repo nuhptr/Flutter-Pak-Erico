@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:latihan_38_product_card/product_card.dart';
+import 'package:latihan_38_product_card/widget/product_card.dart';
 
 class HomePage extends StatelessWidget {
   @override
