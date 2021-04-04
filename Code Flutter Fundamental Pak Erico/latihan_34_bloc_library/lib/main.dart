@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import "package:hydrated_bloc/hydrated_bloc.dart";
 
 import 'color_bloc.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  HydratedBloc.storage = await HydratedStorage.build();
   runApp(MyApp());
 }
 
@@ -15,7 +17,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: BlocProvider<ColorBloc>(
         create: (_) => ColorBloc(Colors.amber),
         child: HomePage(),
