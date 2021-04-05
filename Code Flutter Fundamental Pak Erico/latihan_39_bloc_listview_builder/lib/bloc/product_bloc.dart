@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:latihan_39_bloc_listview_builder/model/product.dart';
 
 class ProductBloc extends Bloc<int, List<Product>> {
-  ProductBloc(List initialState) : super(initialState);
+  ProductBloc(List<Product> initialState) : super(initialState);
 
   @override
   Stream<List<Product>> mapEventToState(int event) async* {

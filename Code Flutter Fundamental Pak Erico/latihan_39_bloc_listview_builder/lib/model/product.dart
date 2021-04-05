@@ -3,5 +3,5 @@ class Product {
   final String name;
   final int price;
 
-  Product({this.imageUrl = " ", this.name = " ", this.price = 0});
+  Product({this.imageUrl = "", this.name = "", this.price = 0});
 }

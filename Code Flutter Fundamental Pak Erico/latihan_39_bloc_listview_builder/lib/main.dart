@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:latihan_39_bloc_listview_builder/bloc/product_bloc.dart';
-import 'package:latihan_39_bloc_listview_builder/model/product.dart';
 
 import 'page/main_page.dart';
 
