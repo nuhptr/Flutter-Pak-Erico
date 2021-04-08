@@ -5,6 +5,8 @@ import 'package:latihan_45_infinite_loading_bloc/bloc/post_bloc.dart';
 
 import 'package:latihan_45_infinite_loading_bloc/view/main_page.dart';
 
+import 'bloc/post_bloc.dart';
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<PostBloc>(
-      create: (_) => PostBloc(PostUnitialized()),
+      create: (_) => PostBloc(PostUnitialized())..add(PostEvent()),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: MainPage(),

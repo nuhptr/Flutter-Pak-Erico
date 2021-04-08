@@ -23,8 +23,10 @@ class Post {
     var resultApi = await http.get(Uri.parse(url));
     var jsonObject = json.decode(resultApi.body) as List;
     return jsonObject
-        .map<Post>((item) =>
-            Post(id: item["id"], title: item["title"], body: item['body']))
+        .map<Post>((item) => Post(
+            id: item["id"].toString(),
+            title: item["title"],
+            body: item['body']))
         .toList();
   }
 }

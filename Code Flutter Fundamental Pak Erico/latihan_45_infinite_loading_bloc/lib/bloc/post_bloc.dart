@@ -29,7 +29,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
   Stream<PostState> mapEventToState(PostEvent event) async* {
     List<Post> posts;
     if (state is PostUnitialized) {
-      posts = await Post.connectApi(1, 10);
+      posts = await Post.connectApi(0, 10);
       yield PostLoaded(posts: posts, hasReachedMax: false);
     } else {
       PostLoaded postLoaded = state as PostLoaded;
