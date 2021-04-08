@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:latihan_45_infinite_loading_bloc/bloc/post_bloc.dart';
-
 import 'package:latihan_45_infinite_loading_bloc/view/main_page.dart';
-
 import 'bloc/post_bloc.dart';
 
 void main() {
