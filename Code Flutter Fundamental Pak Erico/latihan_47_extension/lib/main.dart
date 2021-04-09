@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text('Extension'), centerTitle: true),
       body: Center(
         child: Text(
-          "Bilangan => " & myList.midElement.toString(),
+          "Bilangan => " & x.negate().toString(),
           style: TextStyle(fontSize: 40),
         ),
       ),
