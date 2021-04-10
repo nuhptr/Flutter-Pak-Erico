@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
+
+import 'package:latihan_48_mobx/mobx/counter.dart';
+
+final CounterMobx counter = CounterMobx();
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,19 +34,30 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              '0',
-              style: TextStyle(fontSize: 40),
+            Observer(
+              builder: (BuildContext context) => Text(
+                counter.value.toString(),
+                style: TextStyle(fontSize: 40),
+              ),
             ),
             SizedBox(height: 20),
-            FloatingActionButton(
-              onPressed: () {},
-              child: Icon(Icons.arrow_upward),
-            ),
-            SizedBox(width: 20),
-            FloatingActionButton(
-              onPressed: () {},
-              child: Icon(Icons.arrow_downward),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FloatingActionButton(
+                  onPressed: () {
+                    counter.increment();
+                  },
+                  child: Icon(Icons.arrow_upward),
+                ),
+                SizedBox(width: 20),
+                FloatingActionButton(
+                  onPressed: () {
+                    counter.decrement();
+                  },
+                  child: Icon(Icons.arrow_downward),
+                )
+              ],
             )
           ],
         ),
