@@ -26,10 +26,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("PageView"),
-      ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0,
         items: [
@@ -54,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
           _pageController.animateToPage(
             value,
             duration: Duration(milliseconds: 200),
-            curve: Curves.easeInToLinear,
+            curve: Curves.ease,
           );
           setState(() {});
         },
