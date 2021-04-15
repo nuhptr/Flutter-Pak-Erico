@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-import 'page/main_page.dart';
+import 'pages/main_page.dart';
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-  runApp(MyApp());
-}
+void main() => runApp(CarouselDemo());
 
-class MyApp extends StatelessWidget {
+class CarouselDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

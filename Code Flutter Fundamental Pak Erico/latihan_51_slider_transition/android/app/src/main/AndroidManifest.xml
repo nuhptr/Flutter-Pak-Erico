@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.latihan_51_slider_transition">
    <application
-        android:label="latihan_51_slider_transition"
+        android:label="latihan_51_carousel_slider"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
