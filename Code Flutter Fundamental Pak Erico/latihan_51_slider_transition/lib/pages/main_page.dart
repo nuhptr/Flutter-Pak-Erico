@@ -32,7 +32,7 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: <Widget>[
+          children: [
             SizedBox(height: 30),
             CarouselSlider(
               options: CarouselOptions(
