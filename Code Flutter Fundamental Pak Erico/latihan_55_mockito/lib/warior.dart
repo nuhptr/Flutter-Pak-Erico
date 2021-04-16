@@ -1,0 +1,9 @@
+class Warior {
+  String name = "no name";
+
+  void rest() {}
+
+  Future<bool> training() async {
+    return true;
+  }
+}
