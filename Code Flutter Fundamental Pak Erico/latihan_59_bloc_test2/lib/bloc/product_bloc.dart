@@ -15,5 +15,25 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
     ProductEvent event,
   ) async* {
     // TODO: implement mapEventToState
+    if (event is AddProduct) {
+      if (state is ProductInitial) {
+        yield ProductLoaded(product: [event.product]);
+      } else {
+        yield ProductLoaded(
+          product: (state as ProductLoaded).product + [event.product],
+        );
+      }
+    } else {
+      // TODO: Condition blank state dan there a state
+      if (state is ProductInitial) {
+        yield state;
+      } else {
+        yield ProductLoaded(
+            product: (state as ProductLoaded)
+                .product
+                .where((element) => element != event.product)
+                .toList());
+      }
+    }
   }
 }
