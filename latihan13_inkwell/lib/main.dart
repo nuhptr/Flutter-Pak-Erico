@@ -37,11 +37,7 @@ class Home extends StatelessWidget {
                 height: 40,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(4)),
-                  gradient: LinearGradient(
-                    colors: [Colors.green, Colors.yellow],
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                  ),
+                  color: Colors.blue,
                 ),
                 child: Material(
                   borderRadius: BorderRadius.all(Radius.circular(4)),
@@ -51,8 +47,12 @@ class Home extends StatelessWidget {
                     child: InkWell(
                         splashColor: Colors.amber,
                         borderRadius: BorderRadius.all(Radius.circular(4)),
+                        // TODO : memberikan aksi pada button inkwell
                         onTap: () {},
-                        child: Text("Inkwell")),
+                        child: Text(
+                          "Inkwell",
+                          style: TextStyle(color: Colors.white),
+                        )),
                   ),
                 ),
               ),
