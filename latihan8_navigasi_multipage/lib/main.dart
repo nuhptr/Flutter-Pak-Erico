@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 import 'package:latihan8_navigasi_multipage/second_page.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  // TODO: lock device orientation
+  WidgetsFlutterBinding().ensureVisualUpdate();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitDown,
+    DeviceOrientation.portraitUp,
+  ]).then((_) => runApp(MyApp()));
+}
 
 class MyApp extends StatelessWidget {
   @override
