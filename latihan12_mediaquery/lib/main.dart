@@ -5,7 +5,10 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Home());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Home(),
+    );
   }
 }
 
@@ -14,7 +17,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // TODO: ternary untuk posisi hp ketika digunakan
+        // TODO: ternary opeartor untuk posisi hp ketika digunakan
         body: (MediaQuery.of(context).orientation == Orientation.portrait)
             ? BuildContainer()
             : BuildContainer2(),
