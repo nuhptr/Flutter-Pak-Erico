@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/latihan_4_flexible_layout.iml" filepath="$PROJECT_DIR$/latihan_4_flexible_layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/latihan_4_flexible_layout_android.iml" filepath="$PROJECT_DIR$/android/latihan_4_flexible_layout_android.iml" />
+    </modules>
+  </component>
+</project>
