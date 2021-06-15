@@ -1,14 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-void main() {
-  // TODO: lock device orientation
-  WidgetsFlutterBinding().ensureVisualUpdate();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitDown,
-    DeviceOrientation.portraitUp,
-  ]).then((_) => runApp(MyApp()));
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
