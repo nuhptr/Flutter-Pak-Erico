@@ -24,9 +24,15 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Row(
-        children: [ColorfulButton()],
-      )),
+        child: Row(
+          children: [
+            ColorfulButton(
+              mainColor: Colors.green[300],
+              secondColor: Colors.black38,
+            )
+          ],
+        ),
+      ),
     );
   }
 }
