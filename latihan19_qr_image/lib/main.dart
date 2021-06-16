@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 void main() {
+  // TODO: Lock devie screen orientation
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
@@ -25,6 +26,7 @@ class Home extends StatelessWidget {
         child: Container(
           width: 250,
           height: 250,
+          // TODO: using pub dev qr_flutter
           child: QrImage(
             data: 'https://www.youtube.com/channel/UCyGpJMoH4Hky6legCXq7hdQ',
             foregroundColor: Colors.black,
