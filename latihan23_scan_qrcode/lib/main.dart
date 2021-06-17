@@ -29,6 +29,7 @@ class _HomeState extends State<Home> {
 
   // TODO: function untuk scan barcode
   Future scanBarcode() async {
+    // TODO: variabel buat penampung code
     getCode = await FlutterBarcodeScanner.scanBarcode(
         "#009922", "Cancel", true, ScanMode.DEFAULT);
     setState(() {
