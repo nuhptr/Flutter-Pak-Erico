@@ -17,7 +17,7 @@ class People {
   }
 
   // TODO : Mengambil data dari API
-  static Future<People> getName(String? name, String? job) async {
+  static Future<People> toJson(String? name, String? job) async {
     String url = "https://reqres.in/api/users";
 
     var result = await http.post(Uri.parse(url), body: {

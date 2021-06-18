@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
             ElevatedButton(
               onPressed: () {
                 // TODO: mengambil data dari function static getName
-                People.getName("Adi", "Programmer").then((value) {
+                People.toJson("Adi", "Programmer").then((value) {
                   people = value;
                 });
                 // * : untuk mengubah state ketika ditekan
