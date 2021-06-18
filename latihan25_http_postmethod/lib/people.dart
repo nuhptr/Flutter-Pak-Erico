@@ -16,7 +16,7 @@ class People {
     );
   }
 
-  // TODO : Mengambil data dari API
+  // TODO : POST data ke API
   static Future<People> toJson(String? name, String? job) async {
     String url = "https://reqres.in/api/users";
 
