@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:latihan25_http_postmethod/people.dart';
 
 void main() {
+  // TODO: lock screen device orientation
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
           [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
