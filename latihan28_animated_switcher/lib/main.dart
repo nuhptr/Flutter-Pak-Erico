@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 void main() {
+  // TODO : lock screen device orientation
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
@@ -41,46 +42,49 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            AnimatedSwitcher(
-              duration: Duration(seconds: 1),
-            ),
-            Switch(
-              activeTrackColor: Colors.blue[300],
-              inactiveTrackColor: Colors.grey[300],
-              value: isOn!,
-              onChanged: (value) {
-                isOn = value;
-                setState(() {
-                  if (isOn!) {
-                    myWidget = Text(
-                      "Switch : On",
-                      style: TextStyle(
-                        color: Colors.green[300],
-                        fontWeight: FontWeight.w700,
-                        fontSize: 20,
-                      ),
-                    );
-                  } else {
-                    myWidget = Container(
-                      width: 200,
-                      height: 100,
-                      decoration: BoxDecoration(
-                          color: Colors.red[300],
-                          border: Border.all(
-                            color: Colors.blue.shade300,
-                            width: 3,
-                          )),
-                    );
-                  }
-                });
-              },
-            )
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          // TODO: untuk memberi durasi switch
+          AnimatedSwitcher(
+            duration: Duration(seconds: 1),
+            child: myWidget,
+          ),
+
+          // TODO: untuk memberi pilihan switch dan kondisi ketika di ubah valuenya
+          Switch(
+            activeTrackColor: Colors.blue[300],
+            inactiveTrackColor: Colors.grey[300],
+            value: isOn!,
+            onChanged: (value) {
+              isOn = value;
+              setState(() {
+                // TODO: kondisi ketika true and false
+                if (isOn!) {
+                  myWidget = Text(
+                    "Switch : On",
+                    style: TextStyle(
+                      color: Colors.green[300],
+                      fontWeight: FontWeight.w700,
+                      fontSize: 20,
+                    ),
+                  );
+                } else {
+                  myWidget = Container(
+                    width: 200,
+                    height: 100,
+                    decoration: BoxDecoration(
+                        color: Colors.red[300],
+                        border: Border.all(
+                          color: Colors.blue.shade300,
+                          width: 3,
+                        )),
+                  );
+                }
+              });
+            },
+          )
+        ],
       ),
     );
   }
