@@ -35,7 +35,11 @@ class _HomeState extends State<Home> {
             Text(
               // TODO: pengecekan null value
               (people != null)
-                  ? people!.id! + " " + people!.job! + " " + people!.createdAt!
+                  ? people!.name! +
+                      " " +
+                      people!.job! +
+                      " " +
+                      people!.createdAt!
                   : "Belum ada data",
             ),
             SizedBox(
