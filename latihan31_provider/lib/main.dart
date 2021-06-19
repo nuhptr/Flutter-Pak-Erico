@@ -27,6 +27,7 @@ class Home extends StatelessWidget {
       create: (_) => ColorProvider(),
       child: Scaffold(
         appBar: AppBar(
+          elevation: 0,
           backgroundColor: Colors.white,
           title: Consumer<ColorProvider>(
             builder: (BuildContext context, colorProvider, _) => Text(
@@ -45,12 +46,18 @@ class Home extends StatelessWidget {
               Consumer<ColorProvider>(
                 builder: (BuildContext context, colorProvider, _) =>
                     AnimatedContainer(
+                  decoration: BoxDecoration(
+                    color: colorProvider.color!,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                   duration: Duration(seconds: 1),
                   width: 100,
                   height: 100,
-                  color: colorProvider.color!,
                   margin: EdgeInsets.all(5),
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
 
               // TODO: row widget
@@ -58,7 +65,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    child: Text("AB"),
+                    child: Text("Green"),
                     margin: EdgeInsets.all(5),
                   ),
 
@@ -71,7 +78,7 @@ class Home extends StatelessWidget {
                         }),
                   ),
                   Container(
-                    child: Text("LB"),
+                    child: Text("Blue"),
                     margin: EdgeInsets.all(5),
                   )
                 ],

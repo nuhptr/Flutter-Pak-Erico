@@ -12,5 +12,5 @@ class ColorProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  Color? get color => (isLightBlue) ? Colors.blue[300] : Colors.amber;
+  Color? get color => (isLightBlue) ? Colors.blue[300] : Colors.green[300];
 }
