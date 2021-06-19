@@ -61,6 +61,7 @@ class Home extends StatelessWidget {
                     child: Text("AB"),
                     margin: EdgeInsets.all(5),
                   ),
+
                   // TODO: switch dengan menggunakan consumer provider
                   Consumer<ColorProvider>(
                     builder: (BuildContext context, colorProvider, _) => Switch(
