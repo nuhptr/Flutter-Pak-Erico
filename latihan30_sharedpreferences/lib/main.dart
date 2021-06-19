@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 60,
             ),
-            // * pengisian teks
+            // TODO: pengisian teks
             Container(
               margin: EdgeInsets.symmetric(horizontal: 24),
               padding: EdgeInsets.symmetric(vertical: 20),
@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
               ),
             ),
 
-            // * switch
+            // TODO: switch
             Switch(
                 value: isOn!,
                 onChanged: (value) {
@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 10,
             ),
-            // * Save data
+            // TODO: Save data
             ElevatedButton(
                 onPressed: () {
                   saveData();
@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 10,
             ),
-            // * load data
+            // TODO: load data
             ElevatedButton(
                 onPressed: () {
                   getName().then((value) {
