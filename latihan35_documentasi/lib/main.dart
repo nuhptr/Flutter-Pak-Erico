@@ -39,13 +39,13 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
+          children: [ 
             ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image(
                   image: NetworkImage(
                     photo ??
-                        "https://cdn4.iconFinder.com/data/icons/web-ui-color/128/Account-512.png",
+                        "https://avatars.githubusercontent.com/u/50306963?s=400&u=8c250bad87c4fb8d5374468d645ffcb664cab673&v=4",
                   ),
                   fit: BoxFit.cover,
                   width: 200,
