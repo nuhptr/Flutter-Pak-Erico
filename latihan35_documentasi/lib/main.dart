@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
   /// * [name] default = `" "`
   /// * [role] default = `" "`
   /// * [photoUrl] default = `" "`
-  const Home({this.name = "", this.role = "", this.photo = ""});
+  const Home({this.name, this.role, this.photo});
 
   @override
   Widget build(BuildContext context) {
@@ -39,20 +39,19 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [ 
+          children: [
             ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: Image(
+                borderRadius: BorderRadius.circular(200),
+                child: const Image(
                   image: NetworkImage(
-                    photo ??
-                        "https://avatars.githubusercontent.com/u/50306963?s=400&u=8c250bad87c4fb8d5374468d645ffcb664cab673&v=4",
+                    "https://avatars.githubusercontent.com/u/50306963?s=400&u=8c250bad87c4fb8d5374468d645ffcb664cab673&v=4",
                   ),
                   fit: BoxFit.cover,
-                  width: 200,
-                  height: 200,
+                  width: 300,
+                  height: 300,
                 )),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             Text(
               name ?? "Adi",
