@@ -54,7 +54,7 @@ class _ProgressBarState extends State<ProgressBar> {
                       ? Colors.red.shade300
                       : (ratio < 0.6)
                           ? Colors.green.shade300
-                          : Colors.yellow.shade300,
+                          : Colors.blue.shade300,
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
