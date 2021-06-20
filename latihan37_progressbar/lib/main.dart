@@ -1,10 +1,14 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:latihan37_progressbar/progress.dart';
-import 'package:latihan37_progressbar/time_provider.dart';
 import 'package:provider/provider.dart';
 
+import 'package:latihan37_progressbar/progress.dart';
+import 'package:latihan37_progressbar/time_provider.dart';
+
 void main() {
+  // TODO: lock device screen orientation
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
@@ -16,6 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
+        // TODO: untuk mengimplementasi kelas provider
         home: ChangeNotifierProvider(
           create: (BuildContext context) => TimeProvider(),
           child: Home(),
@@ -23,7 +28,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +50,30 @@ class Home extends StatelessWidget {
                       value: timeProvider.time,
                       totalValue: 15,
                     )),
+            const SizedBox(
+              height: 10,
+            ),
+
+            // TODO: button untuk melakukan penambahan
+            Consumer<TimeProvider>(
+              builder: (BuildContext context, timeProvider, _) =>
+                  ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  elevation: 0,
+                ),
+                onPressed: () {
+                  Timer.periodic(const Duration(seconds: 1), (timer) {
+                    if (timeProvider.time == 0) {
+                      timer.cancel();
+                    } else {
+                      timeProvider.time = timeProvider.time - 1;
+                    }
+                    setState(() {});
+                  });
+                },
+                child: const Text("Start"),
+              ),
+            )
           ],
         ),
       ),
