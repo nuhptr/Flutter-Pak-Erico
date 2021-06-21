@@ -62,7 +62,9 @@ class _HomeState extends State<Home> {
                 child: ListView.builder(
               itemBuilder: (context, index) {
                 return Row(children: [
-                  (index == 0) ? const SizedBox(width: 40) : Container(),
+                  (index == 0)
+                      ? const SizedBox(width: 40)
+                      : const SizedBox(width: 30),
                   ProductCard(
                     url: product[index].url,
                     name: product[index].name,

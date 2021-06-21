@@ -18,5 +18,8 @@ class ProductBloc extends Bloc<int, List<Product>> {
           url:
               "https://cdn-prod.medicalnewstoday.com/content/images/articles/308/308796/mixed-fruits.jpg"));
     }
+
+    // TODO: jangan lupa di return
+    yield product;
   }
 }
