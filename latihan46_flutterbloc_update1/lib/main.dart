@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
                     onPressed: () {
                       counterBloc.add(Increment());
                     },
-                    child: const Icon(Icons.arrow_upward))
+                    child: const Icon(Icons.arrow_upward)),
               ],
             )
           ],
