@@ -7,7 +7,7 @@ class User {
 
   // TODO: default value
   User() {
-    name = "no name";
+    name = 'no name';
     age = 0;
     luckNumber = [];
     Random r = Random();
