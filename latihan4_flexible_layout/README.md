@@ -1,6 +1,6 @@
 # latihan4_flexible_layout
 
-A new Flutter project.
+Latihan 4
 
 ## Getting Started
 
