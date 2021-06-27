@@ -1,6 +1,6 @@
 # latihan9_appbar_gradasi
 
-A new Flutter project.
+Latihan 9
 
 ## Getting Started
 
