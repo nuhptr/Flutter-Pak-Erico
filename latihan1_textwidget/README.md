@@ -1,6 +1,6 @@
 # latihan1_textwidget
 
-A new Flutter project.
+Latihan 1
 
 ## Getting Started
 
