@@ -1,6 +1,6 @@
 # latihan5_stack_layout
 
-A new Flutter project.
+Latihan 5
 
 ## Getting Started
 

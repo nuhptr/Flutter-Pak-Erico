@@ -1,6 +1,6 @@
 # latihan8_navigasi_multipage
 
-A new Flutter project.
+Latihan 8
 
 ## Getting Started
 

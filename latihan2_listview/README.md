@@ -1,6 +1,6 @@
 # latihan2_listview
 
-A new Flutter project.
+Latihan 2
 
 ## Getting Started
 

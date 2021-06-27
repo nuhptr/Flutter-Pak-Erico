@@ -1,6 +1,6 @@
 # latihan6_image
 
-A new Flutter project.
+Latihan 6
 
 ## Getting Started
 
