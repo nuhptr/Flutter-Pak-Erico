@@ -1,6 +1,6 @@
 # latihan3_animated_container
 
-A new Flutter project.
+Latihan 3
 
 ## Getting Started
 
