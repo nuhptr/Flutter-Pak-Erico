@@ -1,6 +1,6 @@
 # latihan7_drag_widget
 
-A new Flutter project.
+Latihan 7
 
 ## Getting Started
 
