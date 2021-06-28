@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "809894795753",
+    "project_id": "flutter-auth-annonymous",
+    "storage_bucket": "flutter-auth-annonymous.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809894795753:android:fdedc4be713a73aacc5378",
+        "android_client_info": {
+          "package_name": "com.example.latihan56_firebase_auth_annonymous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809894795753-iqvstkg479vbj6ms4mekc1srcb1e3m52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxyPnD1pX0-TKVdUEZoggjhdv1JRhZ48I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809894795753-iqvstkg479vbj6ms4mekc1srcb1e3m52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
