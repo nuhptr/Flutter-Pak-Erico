@@ -20,10 +20,8 @@ classpath 'com.google.gms:google-services:4.3.8'
 
 apply plugin: 'com.google.gms.google-services'
 
-in new version of firebase
+## in new version of firebase
 
-# AuthResult -> UserCredential
-
-# FirebaseUser -> User
-
-# onAuthStateChanged -> authStateChanges
+AuthResult -> UserCredential
+FirebaseUser -> User
+onAuthStateChanged -> authStateChanges
