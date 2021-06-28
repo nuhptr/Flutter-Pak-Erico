@@ -22,6 +22,6 @@ apply plugin: 'com.google.gms.google-services'
 
 ## in new version of firebase
 
-AuthResult -> UserCredential
-FirebaseUser -> User
+AuthResult -> UserCredential,
+FirebaseUser -> User,
 onAuthStateChanged -> authStateChanges
