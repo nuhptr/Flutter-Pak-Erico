@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "785686644858",
+    "project_id": "flutter-auth-email-password",
+    "storage_bucket": "flutter-auth-email-password.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785686644858:android:3f56c8ee7e72f38a3e13c3",
+        "android_client_info": {
+          "package_name": "com.example.latihan57_firebase_auth_email_password"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785686644858-lglj7p6m07hivn79lqlbc9lms08uhmf2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFjwLw69UA2m4-qVk3iPdGNkuOgJKxGxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785686644858-lglj7p6m07hivn79lqlbc9lms08uhmf2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
