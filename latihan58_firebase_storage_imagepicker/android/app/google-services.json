@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "235442057496",
+    "project_id": "flutter-storage-imagepicker",
+    "storage_bucket": "flutter-storage-imagepicker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235442057496:android:490b18853946c7a2acae6d",
+        "android_client_info": {
+          "package_name": "com.example.latihan58_firebase_storage_imagepicker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235442057496-mv6411tqgdf7896j9d6dja0t7k0ilmcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdMZN9pIzwEiYxQ7dcDzNtbjB0K8LDqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235442057496-mv6411tqgdf7896j9d6dja0t7k0ilmcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
